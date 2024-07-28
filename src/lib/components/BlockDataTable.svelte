@@ -33,7 +33,7 @@
         <td class="px-4 py-2 text-sm">{new Date(site.last_reported).toLocaleString()}</td>
         <td class="px-4 py-2 text-sm">{site.category}</td>
         <td class="px-4 py-2 text-sm">{site.tags.join(', ')}</td>
-        <td class="px-4 py-2 text-sm"><a href={"/sites/"+site.site_id}><button class="btn-primary btn">View</button></a></td>
+        <td class="px-4 py-2 text-sm"><a href={"#"}><button class="btn-primary btn">View</button></a></td>
       </tr>
     {/each}
     </tbody>

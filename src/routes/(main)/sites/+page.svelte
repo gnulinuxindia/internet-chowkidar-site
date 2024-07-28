@@ -4,7 +4,7 @@
     WebsiteBaseUrl,
     WebsiteDescription,
   } from "../../../config";
-  import BlockDataTable from "$lib/components/BlockDataTable.svelte";
+  import SiteDataTable from "$lib/components/SiteDataTable.svelte";
   import { onMount } from "svelte"
 
   const ldJson = {
@@ -41,7 +41,6 @@
 <svelte:head>
   <title>{WebsiteName}</title>
   <meta name="description" content={WebsiteDescription} />
-  {@html jsonldScript}
 </svelte:head>
 
 <div class="flex flex-col items-center py-8 justify-center ">
@@ -56,6 +55,6 @@
   {:else if error}
     <p>Error: {error}</p>
   {:else}
-    <BlockDataTable {sites} />
+    <SiteDataTable {sites} />
   {/if}
 </div>

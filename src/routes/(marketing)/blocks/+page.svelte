@@ -28,7 +28,6 @@
         throw new Error('Network response was not ok');
       }
       sites = await response.json();
-      console.log(sites)
     } catch (err) {
       error = err.message;
     } finally {

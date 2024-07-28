@@ -24,8 +24,8 @@
     {#each sites as site (site.site_id)}
    <tr class="border-b border-gray-200 hover:bg-gray-50">
         <td class="px-4 py-2 text-sm">{site.domain}</td>
-        <td class="px-4 py-2 text-sm">{site.block_reports}</td>
-        <td class="px-4 py-2 text-sm">{site.unblock_reports}</td>
+        <td class="px-4 py-2 text-sm text-red-800">{site.block_reports}</td>
+        <td class="px-4 py-2 text-sm text-green-600">{site.unblock_reports}</td>
         <td class="px-4 py-2 text-sm">{new Date(site.last_reported_at).toLocaleString()}</td>
         <td class="px-4 py-2 text-sm">{site.categories.join(" , ")}</td>
         <td class="px-4 py-2 text-sm"><a href={"#"}><button class="btn-primary btn">View</button></a></td>

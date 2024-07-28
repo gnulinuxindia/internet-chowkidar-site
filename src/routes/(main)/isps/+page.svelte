@@ -5,7 +5,7 @@
     WebsiteDescription,
   } from "../../../config";
   import { onMount } from "svelte"
-  import SiteDataTable from "$lib/components/SiteDataTable.svelte"
+  import ISPDataTable from "$lib/components/ISPDataTable.svelte"
 
   const ldJson = {
     "@context": "https://schema.org",
@@ -17,7 +17,7 @@
     JSON.stringify(ldJson) + "<"
   }/script>`;
 
-  let sites = [];
+  let isps = [];
   let isLoading = true;
   let error = null;
 
@@ -27,7 +27,7 @@
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
-      sites = await response.json();
+      isps = await response.json();
     } catch (err) {
       error = err.message;
     } finally {
@@ -55,6 +55,6 @@
   {:else if error}
     <p>Error: {error}</p>
   {:else}
-    <SiteDataTable {sites} />
+    <ISPDataTable {isps}/>
   {/if}
 </div>

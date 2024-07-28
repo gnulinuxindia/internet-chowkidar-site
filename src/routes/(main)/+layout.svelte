@@ -47,13 +47,19 @@
         tabindex="0"
         class="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-bold"
       >
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/pricing">Pricing</a></li>
-        <li><a href="/account">Account</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/sites">Sites</a></li>
+        <li><a href="/isps">ISPs</a></li>
         <li>
           <a
             href="https://github.com/CriticalMoments/CMSaasStarter"
             class="border border-primary">★ us on Github</a
+          >
+        </li><br>
+        <li>
+          <a
+            href="https://github.com/CriticalMoments/CMSaasStarter"
+            class="border border-primary">Issues with a site? Report!</a
           >
         </li>
       </ul>

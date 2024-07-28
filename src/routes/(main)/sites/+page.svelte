@@ -41,6 +41,7 @@
 <svelte:head>
   <title>{WebsiteName}</title>
   <meta name="description" content={WebsiteDescription} />
+  {@html jsonldScript}
 </svelte:head>
 
 <div class="flex flex-col items-center py-8 justify-center ">

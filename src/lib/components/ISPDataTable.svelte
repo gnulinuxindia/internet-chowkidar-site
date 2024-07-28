@@ -36,7 +36,7 @@
         <td class="px-4 py-2">{isp.name}</td>
         <td class="px-4 py-2 text-lg font-bold text-red-800">{isp.block_reports}</td>
         <td class="px-4 py-2 text-lg font-bold text-green-600">{isp.unblock_reports}</td>
-        <td class="px-4 py-2">{new Date(isp.last_reported_at).toLocaleString()}</td>
+        <td class="px-4 py-2">{isp.last_reported_at ?? ''}</td>
         <td class="px-4 py-2"><a href={"/isps/"+isp.id}><button class="btn-primary btn">View</button></a></td>
       </tr>
     {/each}

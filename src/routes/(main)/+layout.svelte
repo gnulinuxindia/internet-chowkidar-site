@@ -13,14 +13,8 @@
       <li class="md:mx-2"><a href="/isps">ISPs</a></li>
       <li class="md:mx-4">
         <a
-          href="https://github.com/CriticalMoments/CMSaasStarter"
+          href="https://github.com/gnulinuxindia/internet-chowkidar"
           class="border border-primary">★ us on Github</a
-        >
-      </li>
-      <li class="md:mx-4">
-        <a
-          href="https://github.com/CriticalMoments/CMSaasStarter"
-          class="border border-primary">Issues with a site? Report!</a
         >
       </li>
     </ul>

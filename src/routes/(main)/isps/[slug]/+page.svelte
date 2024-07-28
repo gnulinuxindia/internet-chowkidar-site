@@ -6,7 +6,7 @@
   } from "../../../../config";
   import { onMount } from "svelte"
   import { page } from '$app/stores';
-  import SitePage from "$lib/components/SitePage.svelte"
+  import ISPPage from "$lib/components/ISPPage.svelte"
 
   const ldJson = {
     "@context": "https://schema.org",
@@ -18,17 +18,17 @@
     JSON.stringify(ldJson) + "<"
   }/script>`;
 
-  let site  = {};
+  let isp = {};
   let isLoading = true;
   let error = null;
 
-  async function fetchSites() {
+  async function fetchISPs() {
     try {
       const response = await fetch(`https://inetc.kat.directory/isps/${$page.params.slug}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
-      site = await response.json();
+      isp = await response.json();
     } catch (err) {
       error = err.message;
     } finally {
@@ -36,7 +36,7 @@
     }
   }
 
-  onMount(fetchSites);
+  onMount(fetchISPs);
 </script>
 
 <svelte:head>
@@ -53,6 +53,6 @@
   {:else if error}
     <p>Error: {error}</p>
   {:else}
-    <SitePage {site} />
+    <ISPPage {isp} />
   {/if}
 </div>

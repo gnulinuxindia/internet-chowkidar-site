@@ -1,0 +1,153 @@
+{
+  "sites": [
+    {
+      "site_url": "https://example.com",
+      "site_id": 12345,
+      "site_total_blocks": 1000,
+      "last_reported": "2023-07-28T14:30:00Z",
+      "category": "Social Media",
+      "tags": ["social", "networking", "messaging"],
+      "site_total_unblocks": 50,
+      "isps": [
+        {
+          "isp_name": "Acme Internet Services",
+          "times_blocked": 500,
+          "times_unblocked": 25,
+          "last_reported": "2023-07-28T14:30:00Z",
+          "location_info": {
+            "lat": 40.7128,
+            "long": -74.0060
+          }
+        },
+        {
+          "isp_name": "SuperFast Networks",
+          "times_blocked": 300,
+          "times_unblocked": 15,
+          "last_reported": "2023-07-27T09:15:00Z",
+          "location_info": {
+            "lat": 34.0522,
+            "long": -118.2437
+          }
+        },
+        {
+          "isp_name": "Global Connectivity Co.",
+          "times_blocked": 200,
+          "times_unblocked": 10,
+          "last_reported": "2023-07-26T11:45:00Z",
+          "location_info": {
+            "lat": 51.5074,
+            "long": -0.1278
+          }
+        }
+      ]
+    }
+  ],
+  "isps": [
+    {
+      "id": 1,
+      "latitude": 40.7128,
+      "longitude": -74.0060,
+      "name": "NYC Internet Provider",
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-01-01T00:00:00Z"
+    },
+    {
+      "id": 2,
+      "latitude": 34.0522,
+      "longitude": -118.2437,
+      "name": "LA Internet Provider",
+      "created_at": "2023-02-01T00:00:00Z",
+      "updated_at": "2023-02-01T00:00:00Z"
+    }
+  ],
+  "blocks": [
+    {
+      "id": 1,
+      "site_id": 1,
+      "site_name": "google.com",
+      "isp_id": 1,
+      "last_reported_at": "2023-07-27T10:00:00Z",
+      "block_reports": 8,
+      "unblock_reports": 1,
+      "created_at": "2023-07-01T00:00:00Z",
+      "updated_at": "2023-07-27T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "site_id": 2,
+      "site_name": "pornhub.com",
+      "isp_id": 1,
+      "last_reported_at": "2023-07-26T15:30:00Z",
+      "block_reports": 5,
+      "unblock_reports": 0,
+      "created_at": "2023-07-15T00:00:00Z",
+      "updated_at": "2023-07-26T15:30:00Z"
+    },
+    {
+      "id": 3,
+      "site_id": 1,
+      "site_name": "google.com",
+      "isp_id": 2,
+      "last_reported_at": "2023-07-25T09:00:00Z",
+      "block_reports": 2,
+      "unblock_reports": 1,
+      "created_at": "2023-07-20T00:00:00Z",
+      "updated_at": "2023-07-25T09:00:00Z"
+    }
+  ],
+
+  "aggregated_blocks": [
+    {
+      "site_id": 1,
+      "site_name": "google.com",
+      "total_block_reports": 10,
+      "total_unblock_reports": 2,
+      "last_reported_at": "2023-07-27T10:00:00Z"
+    },
+    {
+      "site_id": 2,
+      "site_name": "pornhub.com",
+      "total_block_reports": 5,
+      "total_unblock_reports": 0,
+      "last_reported_at": "2023-07-26T15:30:00Z"
+    }
+  ],
+
+  "abuse-reports": [
+    {
+      "id": 1,
+      "site_id": 1,
+      "reason": "Inappropriate content",
+      "status": "pending",
+      "resolved_at": null,
+      "created_at": "2023-07-27T09:00:00Z",
+      "updated_at": "2023-07-27T09:00:00Z"
+    }
+  ],
+  "sites/suggestions": [
+    {
+      "id": 1,
+      "site_id": 2,
+      "reason": "Valid educational content",
+      "status": "pending",
+      "resolved_at": null,
+      "created_at": "2023-07-26T14:00:00Z",
+      "updated_at": "2023-07-26T14:00:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Social Media",
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-01-01T00:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "News",
+      "created_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2023-01-01T00:00:00Z"
+    }
+  ]
+}
+

@@ -1,4 +1,4 @@
-export const WebsiteName: string = "SaaS Starter"
-export const WebsiteBaseUrl: string = "https://saasstarter.work"
+export const WebsiteName: string = "Internet Chowkidar"
+export const WebsiteBaseUrl: string = "https://ic.gnulinuxindia.sh"
 export const WebsiteDescription: string =
-  "Open source, fast, and free to host SaaS template. Built with SvelteKit, Supabase, Stripe, Tailwind, DaisyUI, and Postgres"
+  "a web application that allows users to monitor any blocks, bans, or restrictions on the internet by their ISP."

@@ -247,14 +247,11 @@
           class="link font-bold"
           target="_blank">SvelteKit</a
         >,
-        <a href="https://supabase.com" class="link font-bold" target="_blank"
-          >Supabase</a
-        >,
-        <a href="https://stripe.com" class="link font-bold" target="_blank"
-          >Stripe</a
-        >,
         <a href="https://tailwindcss.com" class="link font-bold" target="_blank"
           >Tailwind</a
+        >,
+        <a href="https://go.dev" class="link font-bold" target="_blank"
+        >GoLang</a
         >,
         <a href="https://daisyui.com" class="link font-bold" target="_blank"
           >DaisyUI</a

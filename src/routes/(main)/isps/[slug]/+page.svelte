@@ -24,7 +24,7 @@
 
   async function fetchSites() {
     try {
-      const response = await fetch(`https://inetc.kat.directory/sites/${$page.params.slug}`); // Replace with your actual API endpoint
+      const response = await fetch(`https://inetc.kat.directory/isps/${$page.params.slug}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }

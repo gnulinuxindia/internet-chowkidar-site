@@ -4,8 +4,8 @@
     WebsiteBaseUrl,
     WebsiteDescription,
   } from "../../../config";
-  import BlockDataTable from "$lib/components/BlockDataTable.svelte";
   import { onMount } from "svelte"
+  import SiteDataTable from "$lib/components/SiteDataTable.svelte"
 
   const ldJson = {
     "@context": "https://schema.org",
@@ -55,6 +55,6 @@
   {:else if error}
     <p>Error: {error}</p>
   {:else}
-    <BlockDataTable {sites} />
+    <SiteDataTable {sites} />
   {/if}
 </div>

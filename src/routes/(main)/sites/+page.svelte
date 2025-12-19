@@ -3,6 +3,7 @@
     WebsiteName,
     WebsiteBaseUrl,
     WebsiteDescription,
+	ApiUrl,
   } from "../../../config";
   import SiteDataTable from "$lib/components/SiteDataTable.svelte";
   import { onMount } from "svelte"
@@ -23,7 +24,7 @@
 
   async function fetchSites() {
     try {
-      const response = await fetch('https://inetc.kat.directory/sites'); // Replace with your actual API endpoint
+      const response = await fetch(ApiUrl+'/sites'); // Replace with your actual API endpoint
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }

@@ -3,6 +3,7 @@
     WebsiteName,
     WebsiteBaseUrl,
     WebsiteDescription,
+    ApiUrl,
   } from "../../../config";
   import { onMount } from "svelte"
   import ISPDataTable from "$lib/components/ISPDataTable.svelte"
@@ -23,7 +24,7 @@
 
   async function fetchSites() {
     try {
-      const response = await fetch('https://inetc.kat.directory/isps'); // Replace with your actual API endpoint
+      const response = await fetch(ApiUrl+'/isps'); // Replace with your actual API endpoint
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }

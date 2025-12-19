@@ -3,6 +3,7 @@
     WebsiteName,
     WebsiteBaseUrl,
     WebsiteDescription,
+    ApiUrl,
   } from "../../../../config";
   import { onMount } from "svelte"
   import { page } from '$app/stores';
@@ -24,7 +25,7 @@
 
   async function fetchSites() {
     try {
-      const response = await fetch(`https://inetc.kat.directory/sites/${$page.params.slug}`); // Replace with your actual API endpoint
+      const response = await fetch(ApiUrl+`/sites/${$page.params.slug}`); // Replace with your actual API endpoint
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }

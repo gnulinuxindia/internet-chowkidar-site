@@ -3,6 +3,7 @@
     WebsiteName,
     WebsiteBaseUrl,
     WebsiteDescription,
+    ApiUrl,
   } from "../../../../config";
   import { onMount } from "svelte"
   import { page } from '$app/stores';
@@ -24,7 +25,7 @@
 
   async function fetchISPs() {
     try {
-      const response = await fetch(`https://inetc.kat.directory/isps/${$page.params.slug}`);
+      const response = await fetch(ApiUrl+`/isps/${$page.params.slug}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
